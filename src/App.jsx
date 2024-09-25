@@ -1,10 +1,9 @@
-import { useState } from 'react'
-
-function App() {
+import React from 'react'
+import LoginPage from './LoginPage';
+const App = () => {
   return (
     <>
-    <h1 className="text-center">hi world</h1>
-    <p>سلام دنیا</p>
+    <LoginPage />
     </>
   )
 }
