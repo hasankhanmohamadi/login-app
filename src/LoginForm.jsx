@@ -5,7 +5,6 @@ import RememberMe from './RememberMe';
 import ForgotPasswordLink from './ForgotPasswordLink';
 import SignUpLink from './SignUpLink';
 
-// ایمپورت تصاویر از پوشه assets
 import appStoreImage from '/public/app-store-button.png';
 import googlePlayImage from '/public/google-play-button.png';
 
@@ -15,25 +14,19 @@ const LoginForm = () => {
       <h2 className="text-3xl font-semibold mb-6">Hello, Welcome Back</h2>
       
       <form>
-        {/* فیلد ایمیل */}
         <InputField label="Username Or Email" type="text" />
 
-        {/* فیلد رمزعبور */}
         <InputField label="Password" type="password" />
 
-        {/* بخش مرا به خاطر بسپار و فراموشی رمزعبور */}
         <div className="flex justify-between items-center mb-4">
           <RememberMe />
           <ForgotPasswordLink />
         </div>
 
-        {/* دکمه ورود */}
         <SubmitButton label="Login" />
 
-        {/* لینک ثبت‌نام */}
         <SignUpLink />
 
-        {/* آیکون‌های اپ‌استور و گوگل‌پلی */}
         <div className="flex justify-center mt-6">
           <img src={appStoreImage} alt="App Store" className="w-40 mx-2" />
           <img src={googlePlayImage} alt="Google Play" className="w-40 mx-2" />
